@@ -1,5 +1,3 @@
-import { apiPlugin } from '@storyblok/vue'
-
 export default defineNuxtConfig({
   css: ['@/assets/css/roboto.css'],
   modules: [
@@ -7,20 +5,11 @@ export default defineNuxtConfig({
       '@storyblok/nuxt',
       {
         accessToken: 'VetmLyZdRLSgIDv6QSXwvAtt',
-        use: [apiPlugin]
+        apiOptions: {
+          region: '' // Set 'US" if your space is created in US region (EU default)
+        }
       },
     ],
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/i18n',
-  ],
-  i18n: {
-    strategy: 'prefix_except_default',
-    locales: ['en'],
-    defaultLocale: 'en', // default locale
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: false
-    }
-  }
+  ]
 })

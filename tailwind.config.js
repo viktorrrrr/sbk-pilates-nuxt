@@ -5,5 +5,4 @@ module.exports = {
       sans: 'Roboto, sans-serif',
     },
   },
-  plugins: [require('@tailwindcss/typography')],
 }
