@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   ],
   i18n: {
     strategy: 'prefix_except_default',
-    locales: ['en', 'es'],
+    locales: ['en'],
     defaultLocale: 'en', // default locale
   },
   nitro: {
