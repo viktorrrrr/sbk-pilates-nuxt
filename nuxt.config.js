@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       },
     ],
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
+    // '@nuxtjs/i18n',
   ],
   i18n: {
     strategy: 'prefix_except_default',
